@@ -11,6 +11,7 @@ public class cekListrik {
         //deklarasi variable tetap
         double tarif_per_kWh = 1500.0;
 
+
         System.out.println("==================================================");
         System.out.println("Aplikasi Cek Tagihan Listrik");
         System.out.println("==================================================");
@@ -28,12 +29,8 @@ public class cekListrik {
         System.out.println("==================================================");
         System.out.println("Total tagihan anda\t\t\t : Rp " + tagihan);
 
-        if (penggunaan > 500) {
-            System.out.println("Penggunaan anda melebihi 500 kWh");
-        }
-        else {
-            System.out.println("Penggunaan anda tidak melebihi 500 kWh");
-        }
+        boolean check = penggunaan > 500;
+        System.out.println("Apakah penggunaan listrik melebihi 500 kWh? " + check);
 
     }
 
